@@ -16,21 +16,39 @@
             min-height: 100vh;
             margin: 0;
         }
-
+        input[type=checkbox] {
+            display: none;
+        }
+        input[type=checkbox]:checked ~ label > img {
+            transform: scale(1.9);
+            cursor: zoom-out;
+        }
         .container {
-            width: 90%;
-            max-width: 800px;
+            width: 800px;
             background: #fff;
-            padding: 20px;
+            padding: 0px;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
+        }
+        .con {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            justify-content: center;
+            cursor: zoom-in;
+            transition: transform 2s ease;
         }
         .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
-}
+            margin-top: 10px;
+        }
+        .center img {
+            transition: transform 2s ease;
+        }
         .profile-title {
             color: #ff6506;
             margin-bottom: 10px;
@@ -69,17 +87,29 @@
             font-weight: 450;
         }
 
-        .sample-work-grid {
-            display: grid;
+        .sample {
+            display: flex;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin-top: 10px;
         }
 
-        .sample-work-grid img {
-            width: 100%;
+        .sample img {
+            width: 170;
             height: auto;
-            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            cursor: zoom-in;
+            transition: transform 2s ease;
+        }
+        input[type=checkbox] {
+            display: none;
+        }
+        input[type=checkbox]:checked ~ label > img {
+            transform: scale(1.7);
+            cursor: zoom-out;
         }
         footer p{
             margin: 20px 0;
@@ -98,25 +128,59 @@
         <img src="profile.png" alt="Profile Picture" class="profile-pic">
         <p class="profile-role">Social Media Manager</p>
 
-        <h2 class=AboutMe</h2>
         <p class="about-me">
             I aim to STRENGTEN & EXPAND the business, social media presence through and effective creation and management of publicity material, consistent costumer interaction,careful and deliberate strategic plans thru data analytics
         </p>
         <h2 class="profile-title">Cetification</h2>
-        <div class="certification">
-            <img src="Certificate.png" width="300" height="200">
+        <div class="center">
+                <input type="checkbox" name="" id="zoom_certificate">
+                <label for="zoom_certificate">
+                <img src="Certificate.png" width="300" height="200">
+                </label>
         </div>
         <h2 class="profile-title">Sample Work</h2>
-        <div class="sample-work-grid">
-            <img src="cart.png" alt="Sample 1">
-            <img src="kape.png" alt="Sample Work 2">
-            <img src="damit.png" alt="Sample Work 3">
-            <img src="burger.png" alt="Sample Work 4">
-            <img src="tech-voc.png" alt="Sample Work 5">
-            <img src="nike.png" alt="Sample Work 6">
+        <div class="con">
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_cart">
+                <label for="zoom_cart">
+                <img src="cart.png" alt="Sample 1">
+                </label>
+            </div>
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_kape">
+                <label for="zoom_kape">
+                <img src="kape.png" alt="Sample 2">
+                </label>
+            </div>
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_damit">
+                <label for="zoom_damit">
+                <img src="damit.png" alt="Sample Work 3">
+                </label>
+            </div>
+        </div>
+        <div class="con">
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_burger">
+                <label for="zoom_burger">
+                <img src="burger.png" alt="Sample Work 4">
+                </label>
+            </div>
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_tech-voc">
+                <label for="zoom_tech-voc">
+                <img src="tech-voc.png" alt="Sample Work 5">
+                </label>
+            </div>
+            <div class="sample">
+                <input type="checkbox" name="" id="zoom_nike">
+                <label for="zoom_nike">
+                <img src="nike.png" alt="Sample Work 6">
+                </label>
+            </div>
         </div>
     </div>
-    <img src="hh.jpeg" width="800" class="center">
+    <img src="hh.jpeg" width="800" class="center" style="justify-content: center;">
         
 </body>   
     <footer>
