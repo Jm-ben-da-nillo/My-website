@@ -7,109 +7,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Radley', serif;
-            background-color: #f9f9f9;
-            color: #333;
-            display: block;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            font-family: 'Radley', serif; 
             margin: 0;
         }
         input[type=checkbox] {
             display: none;
         }
         input[type=checkbox]:checked ~ label > img {
-            transform: scale(1.9);
+            transform: scale(1.8);
             cursor: zoom-out;
         }
         .container {
             width: 800px;
             background: #fff;
-            padding: 0px;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
+            overflow: hidden;
+        }
+        .cer {
+            display: flex;
+            justify-content: center;
+        }
+        .cer img {
+            transition: transform 2s ease;
         }
         .con {
             display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
             justify-content: center;
-            cursor: zoom-in;
-            transition: transform 2s ease;
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
-        }
-        .center img {
-            transition: transform 2s ease;
+        .con img { 
+            border: 1px solid #ff6506;
         }
         .profile-title {
             color: #ff6506;
             margin-bottom: 10px;
         }
-
         .intro-text {
             font-size: 1em;
             color: #666;
-            margin-bottom: 20px;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ff6506;
             margin-bottom: 10px;
         }
-
+        .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid #ff6506;
+        }
         .profile-role {
             font-size: 1.1em;
             font-weight: bold;
             color: #333;
-            margin-bottom: 20px;
         }
-
         .section-title {
             color: #ff6506;
             margin: 20px 0 10px;
         }
-
         .about-me {
             margin: 10px 0;
             font-size: 15px;
             font-weight: 450;
         }
-
-        .sample {
-            display: flex;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 10px;
-        }
-
         .sample img {
-            width: 170;
+            width: 200;
             height: auto;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
             margin-bottom: 10px;
-            border-radius: 10px;
-            cursor: zoom-in;
-            transition: transform 2s ease;
-        }
-        input[type=checkbox] {
-            display: none;
-        }
-        input[type=checkbox]:checked ~ label > img {
-            transform: scale(1.9);
-            cursor: zoom-out;
+            border-radius: 5px;
+            transition: transform 3s ease;
         }
         footer p{
             margin: 20px 0;
@@ -132,7 +97,7 @@
             I aim to STRENGTEN & EXPAND the business, social media presence through and effective creation and management of publicity material, consistent costumer interaction,careful and deliberate strategic plans thru data analytics
         </p>
         <h2 class="profile-title">Cetification</h2>
-        <div class="center">
+        <div class="cer">
                 <input type="checkbox" name="" id="zoom_certificate">
                 <label for="zoom_certificate">
                 <img src="Certificate.png" width="300" height="200">
@@ -179,9 +144,9 @@
                 </label>
             </div>
         </div>
+        <img src="hh.jpeg" width="800" style="justify-content: center;">
     </div>
-    <img src="hh.jpeg" width="800" class="center" style="justify-content: center;">
-        
+
 </body>   
     <footer>
         <p>&copy; 2024 JM BENDANILLO all rights reserved.</p>
